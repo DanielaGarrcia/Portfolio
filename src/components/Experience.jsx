@@ -82,7 +82,7 @@ function Experience() {
                       <div className="card shadow">
                           <p className="title">Freelancer</p>
                           <div className="flex margin">
-                              <p className="rol">Web Developer/Dessigner</p>
+                              <p className="rol">Web Developer / Dessigner</p>
                           </div>
                           <p className="description">I have created visually appealing and functional websites tailored to the specific needs of various clients, working on a project basis. In my free time, I have pursued my passion for Graphic Design.</p>
                       </div>
