@@ -56,12 +56,12 @@ const Home = () => {
             <div className="home_page">
               <aside className='left'>
                   <div className="main_card shadow debbug">
-                    <img src={my_picture} alt="Jacobo Escorcia" className='main_picture'/>
+                    <img src={my_picture} alt="Daniela Ponce" className='main_picture'/>
                     <div className='social_media'>
-                      <a href="https://www.linkedin.com/in/jacobo-escorcia-alcantara-392bb8208/" class="social_button linkedin" target="_blank" rel="noopener noreferrer">
+                      <a href="https://www.linkedin.com/in//" class="social_button linkedin" target="_blank" rel="noopener noreferrer">
                           <i class="fab fa-linkedin"></i>
                       </a>
-                      <a href="https://github.com/Jacob0o0" class="social_button github" target="_blank" rel="noopener noreferrer">
+                      <a href="https://github.com/DanielaGarrcia" class="social_button github" target="_blank" rel="noopener noreferrer">
                           <i class="fab fa-github"></i>
                       </a>
                     </div>
@@ -69,8 +69,8 @@ const Home = () => {
               </aside>
               <aside className='right'>
                   <h3>Hello World, I'm</h3>
-                  <h1>Daniela Ponce,</h1>
-                  <h2 className='gradient_text'>Multi-platform developer</h2>
+                  <h1>Daniela Ponce, </h1>
+                  <h2 className='gradient_text'>Multi-platform developer </h2>
 
                   <p>
                       I'm a versatile, curious and <span class="gradient_text">self-taught</span> programmer who is always willing to learn and improve my skills. 
