@@ -1,0 +1,311 @@
+.experience_page{
+    margin: 0px 10dvw 0 10dvw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+    z-index: 1;
+    
+    width: 100%;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+
+    z-index: 2;
+
+    max-width: 500px;
+}
+
+.up_mark{
+    display: flex;
+}
+
+.rol_time{
+    padding: 5px 10px 5px 10px;
+
+    background-color: var(--primary-blue);
+    border-radius: 15px;
+    border: #fff solid 2px;
+}
+
+.card{
+    margin: 0;
+    padding: 20px;
+
+    background-color: rgb(36, 40, 59, 0.7);
+    backdrop-filter: blur(10px); /* Añade el efecto de desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidad con navegadores WebKit */
+    border-radius: 15px;
+    border: solid var(--primary-blue) 3px;
+
+    .title{
+        margin: 0;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .rol{
+        padding: 5px 10px 5px 10px;
+        margin: 0 10px 0 0;
+        margin-top: 10px;
+
+        font-size: 16px;
+        font-weight: 700;
+
+        background-color: var(--primary-blue);
+        border-radius: 15px;
+    }
+
+    .job{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+        position: relative;
+
+        padding: 5px 10px 5px 10px;
+        margin: 0;
+        margin-top: 10px;
+
+        font-size: 16px;
+        font-weight: 700;
+
+        /* background: linear-gradient(18deg,  hsla(43, 91%, 69%, 1) 0%, hsla(212, 74%, 50%, 1) 100%); */
+        border-radius: 15px;
+    }
+
+    .job::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+
+        top: -100%;
+        left: -25%;
+
+        width: 100px;
+        height: 100px;
+
+        background: linear-gradient(18deg,  hsla(43, 91%, 69%, 1) 12%, hsla(212, 74%, 50%, 1) 100%);
+        border-radius: 15px;
+        animation: gradientAnimation-C 5s linear infinite;
+    }
+}
+
+.line{
+    content: " ";
+    background-color: var(--primary-blue);
+    border-radius: 50px;
+
+    position: absolute;
+    top: 100px;
+    z-index: 0;
+
+    width: 5px;
+    height: 0%;
+}
+
+.point_1 {
+    position: absolute;
+    top: 180px;
+
+    width: 15px;
+    height: 15px;
+
+    background-color: var(--primary-black);
+    border-radius: 50%;
+    border: 5px var(--primary-blue) solid;
+}
+
+.point_1::before{
+    content: "";
+    top: 50%;
+    left: 420%;
+
+    position: absolute;
+
+    width: 5dvw;
+    height: 5px;
+    
+    background-color: var(--primary-blue);
+    border-radius: 50px; /* Para hacerlo circular */
+
+    transform: translate(-50%, -50%); /* Centramos completamente */
+}
+
+.point_2 {
+    position: absolute;
+    top: 470px;
+
+    width: 15px;
+    height: 15px;
+
+    background-color: var(--primary-black);
+    border-radius: 50%;
+    border: 5px var(--primary-blue) solid;
+}
+
+.point_2::before{
+    content: "";
+    top: 50%;
+    left: -320%;
+
+    position: absolute;
+
+    width: 5dvw;
+    height: 5px;
+    
+    background-color: var(--primary-blue);
+    border-radius: 50px; /* Para hacerlo circular */
+
+    transform: translate(-50%, -50%); /* Centramos completamente */
+}
+
+.point_3 {
+    position: absolute;
+    top: 760px;
+
+    width: 15px;
+    height: 15px;
+
+    background-color: var(--primary-black);
+    border-radius: 50%;
+    border: 5px var(--primary-blue) solid;
+}
+
+.point_3::before{
+    content: "";
+    top: 50%;
+    left: 420%;
+
+    position: absolute;
+
+    width: 5dvw;
+    height: 5px;
+    
+    background-color: var(--primary-blue);
+    border-radius: 50px; /* Para hacerlo circular */
+
+    transform: translate(-50%, -50%); /* Centramos completamente */
+}
+
+.blob-leftE{
+    z-index: 1;
+    width: 500px;
+    position: absolute;
+    left: -300px;
+    top: 0px;
+}
+
+.blob-leftE-blur{
+    z-index: -1;
+    width: 500px;
+    position: absolute;
+    left: -300px;
+    top: 0px;
+    opacity: 1;
+    filter: blur(20px);
+}
+
+.blob-rightE{
+    z-index: 1;
+    width: 450px;
+    position: absolute;
+    left: 70vw;
+    bottom: 0px;
+}
+
+.blob-rightE-blur{
+    z-index: -1;
+    width: 450px;
+    position: absolute;
+    left: 70vw;
+    bottom: 0px;
+    opacity: 1;
+    filter: blur(20px);
+}
+
+
+/* Estilos para pantallas medianas-grandes (iPads) */
+@media screen and (max-width: 1200px) {
+    .alignment_left{
+        margin-right: auto;
+        margin-left: 0;
+    }
+    
+    .alignment_right{
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .point_1{
+        display: none;
+    }
+
+    .point_2{
+        display: none;
+    }
+
+    .point_3{
+        display: none;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 576px) {
+
+    .card{
+        .rol{
+            font-size: 13px;
+            font-weight: 700;
+        }
+        .job{
+            font-size: 13px;
+            font-weight: 700;
+        }
+    }
+
+    .alignment_left{
+        margin-right: auto;
+        margin-left: 0;
+    }
+    
+    .alignment_right{
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .point_1{
+        display: none;
+    }
+
+    .point_2{
+        display: none;
+    }
+
+    .point_3{
+        display: none;
+    }
+
+    .blob-rightE{
+        z-index: 1;
+        width: 450px;
+        position: absolute;
+        left: 20vw;
+        bottom: 0px;
+    }
+    
+    .blob-rightE-blur{
+        z-index: -1;
+        width: 450px;
+        position: absolute;
+        left: 20vw;
+        bottom: 0px;
+        opacity: 1;
+        filter: blur(20px);
+    }
+
+}

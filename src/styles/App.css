@@ -1,0 +1,133 @@
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+:root{
+    /* =================== COLORS =================== */
+    --background-color: #1A1B26;
+    --primary-black: #24283B;
+    --primary-blue: #0099DB;
+    --primary-purple: #574AE2;
+    --font-color: #ffffff;
+
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: 'Montserrat', 'Courier New', Courier, monospace;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.page_name{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.screen_size{
+    width: 100dvw;
+    max-width: 100dvw;
+    min-height: 100dvh;
+
+    /* overflow-x: hidden; */
+    overflow: hidden;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alignment_left{
+    margin-right: auto;
+    margin-left: 100px;
+}
+
+.alignment_right{
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.flex{
+    display: flex;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.debbug{
+    border: red dotted 3px;
+}
+
+.gradient_text {
+    background: linear-gradient(120deg, hsla(213, 62%, 45%, 1) 15%, hsla(0, 0%, 96%, 1) 20%, hsla(203, 89%, 71%, 1) 50%, hsla(213, 62%, 45%, 1) 60%, hsla(0, 0%, 96%, 1) 80%, hsla(213, 62%, 45%, 1) 90%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 5s linear infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+@keyframes gradientAnimation-C {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(-10px); /* Ajusta la distancia de flotación */
+    }
+}
+
+@keyframes floatAlt {
+    0%, 100% {
+      transform: translateY(5px);
+    }
+    50% {
+      transform: translateY(-5px); /* Ajusta la distancia de flotación */
+    }
+}
+
+@keyframes scalar {
+    0%, 100% {
+      transform: scale(1.0);
+    }
+    50% {
+      transform: scale(1.02); /* Ajusta la distancia de flotación */
+    }
+  }
+
+.shadow{
+    box-shadow: 0px 0px 27px 5px rgba(0,0,0,0.75);
+}

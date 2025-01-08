@@ -1,0 +1,308 @@
+.portfolio_page{
+    padding: 0px;
+
+    position: relative;
+
+    width: 70dvw;
+
+    margin: 0 100px 0 100px;
+}
+
+.project{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    position: relative;
+
+    margin: 0px 0px 10% 0px;
+
+    width: 100%;
+    height: 50dvh;
+}
+
+.mockup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    width: 50%;
+    height: 100%;
+
+    /* background-color: var(--primary-black); */
+    border-radius: 15px;
+}
+
+.mockup_img{
+    z-index: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover; /* Hace que la imagen se comporte como background-size: cover */
+    animation: float 3s ease-in-out infinite; /* Aplicación de la animación */
+}
+
+.icon{
+    position: absolute;
+    top: 30%;
+    right: 20%;
+
+    z-index: 2;
+
+    border-radius: 15px;
+}
+
+.card_project{
+    padding: 20px;
+    
+    max-width: 30%;
+
+    .title{
+        margin: 0;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .rol{
+        padding: 5px 10px 5px 10px;
+        margin: 0 10px 0 0;
+        margin-top: 10px;
+
+        font-size: 16px;
+        font-weight: 700;
+
+        background-color: var(--primary-blue);
+        border-radius: 15px;
+    }
+
+    .job{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        overflow: hidden;
+        position: relative;
+
+        padding: 5px 10px 5px 10px;
+        margin: 0;
+        margin-top: 10px;
+
+        font-size: 16px;
+        font-weight: 700;
+
+        /* background: linear-gradient(18deg,  hsla(43, 91%, 69%, 1) 0%, hsla(212, 74%, 50%, 1) 100%); */
+        border-radius: 15px;
+    }
+}
+
+.c_r{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.blobC{
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.blob_blurC{
+    z-index: -1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.blob1{
+    width: 75%;
+}
+
+.blob1-blur{
+    width: 75%;
+    opacity: 1;
+    filter: blur(20px);
+}
+
+.blob2{
+    width: 100%;
+}
+
+.blob2-blur{
+    width: 100%;
+
+    opacity: 1;
+    filter: blur(20px);
+}
+
+.blob3{
+    width: 80%;
+}
+
+.blob3-blur{
+    width: 80%;
+
+    opacity: 1;
+    filter: blur(20px);
+}
+
+.blob4{
+    width: 100%;
+}
+
+.blob4-blur{
+    width: 100%;
+
+    opacity: 1;
+    filter: blur(20px);
+}
+
+.blob5{
+    width: 90%;
+}
+
+.blob5-blur{
+    width: 90%;
+
+    opacity: 1;
+    filter: blur(20px);
+}
+
+.margin_responsive{
+    margin-bottom: 20vh;
+}
+
+/* LAPTOPS */
+@media screen and (max-width: 1300px) {
+    .blob1{
+        left: -10%;
+    }
+
+    .blob1-blur{
+        left: -10%;
+    }
+
+    .blob4{
+        left: 35vw;
+    }
+
+    .blob4-blur{
+        left: 35vw;
+    }
+
+    .blob5{
+        left: -15%;
+    }
+
+    .blob5-blur{
+        left: -15%;
+    }
+}
+
+/* Estilos para pantallas medianas-grandes (iPads) */
+@media screen and (max-width: 1200px) {
+    .project{
+        margin: 0px 0px 5dvh 0;
+
+        width: 100%;
+    }
+
+    .card_project{
+        max-width: 30dvw;
+    }
+
+    .mockup{
+        width: 50dvw;
+        height: 100%;
+    }
+    
+    .mockup_img{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .icon{
+        top: 40%;
+        right: 5%;
+
+        width: 50px;
+    
+        border-radius: 15px;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 576px) {
+    .project{
+        margin: 0px 0px 5dvh 0;
+
+        flex-direction: column;
+
+        width: 100%;
+        height: auto;
+    }
+
+    .card_project{
+        max-width: 70dvw;
+        margin-bottom: 10dvh;
+        margin-top: 5dvh;
+    }
+
+    .mockup{
+        width: 70dvw;
+        height: 20vh;
+    }
+    
+    .mockup_img{
+        position: absolute;
+        top: -50%;
+        left: -50%;
+
+        width: 200%;
+        height: 200%;
+    }
+
+    .reverse_col{
+        flex-direction: column-reverse;
+    }
+
+    .blob3{    
+        width: 100%;
+    }
+    
+    .blob3-blur{    
+        width: 100%;
+    }
+
+    .margin_responsive{
+        margin-bottom: 0;
+    }
+}

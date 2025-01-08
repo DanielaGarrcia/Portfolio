@@ -1,0 +1,532 @@
+h1{
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    font-size: 40px;
+    margin-top: -8px;
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: -8px;
+    color: #cfcfcf;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 120vh;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.home_page{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 1;
+
+    padding: 15px;
+}
+
+.center_home{
+    display: flex;
+    align-items: center;
+
+    height: 95vh;
+}
+
+.blob-left{
+    z-index: 1;
+    width: 700px;
+    position: absolute;
+    left: -400px;
+    top: -400px;
+}
+
+.blob-left-blur{
+    z-index: 1;
+    width: 700px;
+    position: absolute;
+    left: -400px;
+    top: -400px;
+    opacity: 1;
+    filter: blur(20px);
+}
+
+.blob-right{
+    z-index: -1;
+    width: 600px;
+    position: absolute;
+    left: 80vw;
+    top: 40vh;
+}
+
+.blob-right-blur{
+    z-index: -1;
+    width: 600px;
+    position: absolute;
+    left: 80vw;
+    top: 40vh;
+    opacity: 1;
+    filter: blur(20px);
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 25dvw;
+    height: 50dvh;
+    
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+
+    z-index: 2;
+
+    width: 45dvw;
+
+    margin: 10px;
+    margin-left: 20px;
+
+    p{
+        font-size: 25px;
+    }
+}
+
+.main_card{
+    width: 40vh;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    
+    background-color: var(--primary-blue);
+    border: solid var(--primary-blue) 3px;
+    border-radius: 15px;
+}
+
+.main_picture{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.social_media{
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    left: 0px;
+    bottom: -20px;
+}
+
+.social_button{
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    font-size: 50px;
+    color: #fff;
+
+    background-color: var(--primary-black);
+    border-radius: 15px;
+    border: solid var(--primary-blue) 1px;
+
+    text-decoration: none;
+
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.social_button:hover {
+    transform: scale(1.2);
+    border: solid var(--primary-blue) 3px;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background-color: var(--primary-black);
+    border-radius: 15px;
+    border: 3px solid var(--primary-blue);
+
+    padding: 20px;
+    margin-top: 20px;
+
+    p{
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .reference{
+        font-size: 16px;
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    
+    .text{
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+    }
+}
+
+.card_f{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.contact{
+    margin: 15px 10px 15px 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: var(--primary-black);
+    border-radius: 50px;
+    border: 3px solid var(--primary-blue);
+
+    transition: transform 0.3s ease-in-out;
+
+    i{
+        margin: 8px;
+        padding: 5px;
+        color: var(--primary-blue);
+
+        border: 3px var(--primary-blue) solid;
+        border-radius: 50%;
+    }
+
+    p{
+        margin: 10px 10px 10px 0;
+    }
+}
+
+.contact:hover{
+    transform: scale(1.2);
+}
+
+/* Estilos para pantallas medianas-grandes (iPads) */
+@media screen and (max-width: 1200px) {
+    h1{
+        font-size: 50px;
+        padding: 0;
+        line-height: 1.0;
+    }
+    
+    h2{
+        font-size: 35px;
+        margin-top: 8px;
+    }
+    
+    h3{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .home{
+        height: auto;
+    }
+
+    .home_page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        height: auto;
+    }
+
+    .left{
+        width: 20dvh;
+        height: 30dvh;
+
+        margin: 20px;
+    }
+
+    .right{
+        justify-content: center;
+
+        width: 80dvw;
+        min-height: 50dvh;
+
+        p{
+            font-size: 25px;
+        }
+    }
+
+    .main_card{
+        width: 20vh;
+        height: 25dvh;
+    }
+
+    .quote{
+        p{
+            font-size: 20px;
+        }
+        .reference{
+            font-size: 15px;
+        }
+    }
+
+    .social_media{
+        left: -30px;
+    }
+
+    .blob-right{
+        width: 600px;
+        left: 70vw;
+        top: 80vw;
+    }
+    
+    .blob-right-blur{
+        width: 600px;
+        left: 70vw;
+        top: 80vw;
+    }
+}
+
+/* Estilos para pantallas medianas (tablet) */
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 50px;
+        padding: 0;
+        line-height: 1.0;
+    }
+    
+    h2{
+        font-size: 35px;
+        margin-top: 8px;
+    }
+    
+    h3{
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .main_card{
+        width: 20vh;
+        height: 25dvh;
+    }
+
+    .quote{
+        p{
+            font-size: 20px;
+        }
+        .reference{
+            font-size: 15px;
+        }
+    }
+
+    .blob-left{
+        width: 700px;
+        left: -400px;
+        top: -400px;
+    }
+    
+    .blob-left-blur{
+        width: 700px;
+        left: -400px;
+        top: -400px;
+    }
+    
+    .blob-right{
+        width: 500px;
+        top: 60vh;
+        left: 70vw;
+    }
+    
+    .blob-right-blur{
+        width: 500px;
+        top: 60vh;
+        left: 70vw;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 576px) {
+    h1{
+        font-size: 30px;
+        padding: 0;
+        line-height: 1.0;
+    }
+    
+    h2{
+        font-size: 20px;
+        margin-top: 8px;
+    }
+    
+    h3{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .home_page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left{
+        width: 20dvh;
+        height: 30dvh;
+
+        margin: 0;
+    }
+
+    .right{
+        width: 80dvw;
+        min-height: 50dvh;
+
+        p{
+            font-size: 20px;
+        }
+    }
+
+    .main_card{
+        width: 20vh;
+        height: 25dvh;
+    }
+
+    .quote{
+        p{
+            font-size: 13px;
+        }
+        .reference{
+            font-size: 10px;
+        }
+    }
+
+    .contact{
+        flex-direction: row;
+    }
+
+    .card_f{
+        z-index: 2;
+        
+        flex-direction: column;
+    }
+
+    .contact{
+        margin: 7px 0px 7px 0px;
+    
+        i{
+            margin: 5px;
+            font-size: 15px;
+        }
+    
+        p{
+            font-size: 15px;
+        }
+    }
+    
+    .blob-left{
+        width: 700px;
+        left: -400px;
+        top: -400px;
+    }
+    
+    .blob-left-blur{
+        position: absolute;
+        width: 700px;
+        left: -400px;
+        top: -400px;
+    }
+    
+    .blob-right{
+        width: 500px;
+        top: 50vh;
+        left: 40vw;
+    }
+    
+    .blob-right-blur{
+        width: 500px;
+        top: 50vh;
+        left: 40vw;
+    }
+
+    .social_button{
+        width: 20px;
+        height: 20px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .center_home{
+        height: 120vh;
+    }
+
+    .blob-right{
+        position: absolute;
+        width: 500px;
+        top: 65vh;
+        left: 40vw;
+    }
+    
+    .blob-right-blur{
+        width: 500px;
+        top: 65vh;
+        left: 40vw;
+    }
+}
+
+/* Estilos para pantallas grandes (desktop) */
+@media screen and (min-width: 1200px) {
+    .home_page{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .quote{
+        p{
+            font-size: 20px;
+        }
+        .reference{
+            font-size: 15px;
+        }
+    }
+}

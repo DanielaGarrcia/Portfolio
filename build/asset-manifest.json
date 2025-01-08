@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Portfolio/build/static/css/main.8c011134.css",
+    "main.js": "/Portfolio/build/static/js/main.e520c42d.js",
+    "static/media/Me_happy.png": "/Portfolio/build/static/media/Me_happy.fb30df2d31bc3bd01522.png",
+    "static/media/phone.png": "/Portfolio/build/static/media/phone.317190f6bf69de09fb12.png",
+    "static/media/laptop.png": "/Portfolio/build/static/media/laptop.296173053f439ce34860.png",
+    "static/media/cowspiracy_rb.png": "/Portfolio/build/static/media/cowspiracy_rb.f908c78cdb38fca68c16.png",
+    "static/media/vanita_rb_a.png": "/Portfolio/build/static/media/vanita_rb_a.cbea16984a338e7ecebc.png",
+    "static/media/bonsaving_rb_a.png": "/Portfolio/build/static/media/bonsaving_rb_a.d083ebc977668223b0e2.png",
+    "static/media/architecture_rb.png": "/Portfolio/build/static/media/architecture_rb.a4c3bc36758716f149cb.png",
+    "static/media/finanup_rb.png": "/Portfolio/build/static/media/finanup_rb.4820450afed56acdb27e.png",
+    "static/media/react_logo.png": "/Portfolio/build/static/media/react_logo.ee618307265038b97d52.png",
+    "static/media/swiftui-logo.png": "/Portfolio/build/static/media/swiftui-logo.17f94d51e9840c1c7bb3.png",
+    "static/media/coreml-logo.png": "/Portfolio/build/static/media/coreml-logo.52ecb98d0210a2e36205.png",
+    "static/media/bootstrap_logo.png": "/Portfolio/build/static/media/bootstrap_logo.8df2daf9ef7af736c14b.png",
+    "static/media/css_logo.png": "/Portfolio/build/static/media/css_logo.e3eaca70a5df942f9b5b.png",
+    "static/media/html_logo.png": "/Portfolio/build/static/media/html_logo.db497395dd35aa76c626.png",
+    "static/media/django_logo.jpg": "/Portfolio/build/static/media/django_logo.fdf8ea04f5a49cea1c89.jpg",
+    "static/media/arkit-logo.webp": "/Portfolio/build/static/media/arkit-logo.88af9fe0678a41a96e7f.webp",
+    "static/media/php_logo.png": "/Portfolio/build/static/media/php_logo.d9fcf54cca347876e9d6.png",
+    "static/media/JavaScript_logo.png": "/Portfolio/build/static/media/JavaScript_logo.266bd9fb2663dcc057b4.png",
+    "index.html": "/Portfolio/build/index.html",
+    "main.8c011134.css.map": "/Portfolio/build/static/css/main.8c011134.css.map",
+    "main.e520c42d.js.map": "/Portfolio/build/static/js/main.e520c42d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c011134.css",
+    "static/js/main.e520c42d.js"
+  ]
+}
